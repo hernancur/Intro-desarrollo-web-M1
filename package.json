@@ -1,0 +1,17 @@
+{
+  "name": "intro-web-dev---m1",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene los materiales del primer módulo. Está diseñado para cubrir los conceptos básicos de HTML - CSS - JAVASCRIPT",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --collectCoverage=false"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.1",
+    "eslint": "^8.52.0",
+    "jest": "^29.7.0"
+  }
+}
