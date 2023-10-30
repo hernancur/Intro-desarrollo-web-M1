@@ -1,8 +1,7 @@
 
 En esta clase cubriremos:
 
-* Control de flujo y operadores de comparación
-* `Undefined` y `null`
+* Control de flujo 
 * Flujos de control 
 * Operados lógicos
 
@@ -27,22 +26,6 @@ Aquí estamos tomando un número (`edad`) y verificando si la declaración es` t
 El símbolo "mayor que" (`>`) que ve en el último ejemplo se llama _Operador de comparación_. Los operadores de comparación evalúan dos elementos y devuelven `verdadero` o` falso`. Estos operadores son: `<`, `<=`, `>`, `> =`, `===`, `! ==`. Aprenderemos más sobre estos operadores en la próxima lección.
 
 
-## Undefined y null
-
-Hay un par de objetos Javascript que realmente no encajan en ningún tipo de dato. Esos son los valores `undefined` y` null`. Obtendrás `undefined` cuando busques _algo_ que no existe, como una variable que aún no tiene un valor. `undefined` simplemente significa que lo que estás pidiendo no existe.
-
-```javascript
-console.log(variableInexistente); // undefined
-```
-
-`null` es un objeto que nosotros, los desarrolladores, establecemos cuando queremos decirles a otros desarrolladores que el elemento que están buscando existe, pero no hay ningún valor asociado con él. Mientras que `undefined` está configurado por Javascript,` null` está configurado por un desarrollador. Si alguna vez recibes `null`, debes saber que otro desarrollador estableció ese valor en` null`
-
-```javascript
-let numeroTelefono = '11-1234-5678';
-numeroTelefono = null;
-
-numeroTelefono; // null
-```
 
 Una última cosa a tener en cuenta, ni `undefined` ni` null` son cadenas, están escritas tal como están sin comillas, como un booleano.
 
@@ -65,43 +48,6 @@ false
 undefined
 null
 '' // Una cadena vacía
-```
-
-## Operadores de comparación 
-
-En la última lección usamos operadores de comparación, ahora profundizaremos un poco más sobre cómo funcionan y luego presentaremos un pariente cercano de operadores de comparación, los "operadores lógicos".
-
-En la última lección presentamos nuestros operadores de comparación, (`>` `>=` `<` `<=` `===` `!==`). Estos operadores funcionan como lo harían en una clase de matemáticas, mayor que, menor que, etc. Utilizamos estos operadores para evaluar dos expresiones. A medida que la computadora ejecuta el código, el operador devolverá un `verdadero` (si la declaración es verdadera) o un` falso`.
-
-```javascript
-1 > 2;     // false
-2 < 3;     // true
-10 >= 10;  // true
-100 <= 1;  // false
-```
-
-El "triple igual" (`===`) no debe confundirse con un solo signo igual (que indica asignar un valor a una variable). El triple igual comparará todo sobre los dos elementos, incluido el tipo, y devolverá si son exactamente iguales o no:
-
-(Algo a tener en cuenta: hay un "doble igual" (`==`) que comparará dos elementos, pero NO tendrá en cuenta sus tipos (`1 == '1' // verdadero`). Debido a esto , se considera una mala práctica usar el doble igual. Nos gustaría verte siempre usando el triple, y siempre nos verás usándolo.)
-
-```javascript
-1 === 1;          // true
-1 === '1';        // false
-'perro' === 'perro';  // true
-'perro' === 'Perro';  // false
-```
-
-El último operador de comparación que nos gustaría presentarle tiene dos partes.
-
-Primero es el "NOT" (`!`). Cuando veas esto significará que estamos preguntando lo contrario de la expresión (volveremos a visitar el operador NOT más adelante en esta lección).
-
-Con eso en mente, podemos introducir el "no es igual" (`!==`). Esto devolverá verdadero si los artículos NO son iguales entre sí de alguna manera. Esto, como el triple igual, tiene en cuenta el tipo de dato.
-
-```javascript
-1 !== 1;          // false
-1 !== '1';        // true
-'perro' !== 'perro';  // false
-'perro' !== 'Perro';  // true
 ```
 
 ## Flujos de control 

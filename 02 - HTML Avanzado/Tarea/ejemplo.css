@@ -1,0 +1,37 @@
+img {
+    width: 30mm;
+    height: 150px;
+}
+
+form{
+    border: 2px solid green;
+    background-color: aqua;
+}
+
+form:hover{
+    background-color: brown;
+}
+
+img:hover{
+    transform: scale(1.5);
+}
+
+.labels:active{
+    border: 4px solid red;
+}
+
+textarea:focus{
+    border: 4px solid blue;
+}
+
+
+
+.prueba-herencia ~ h1{
+    background-color: blue;
+}
+
+.labels li{
+    margin: 50px;
+    border: 2px solid red;
+    padding: 10px;
+}
